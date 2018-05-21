@@ -1,7 +1,7 @@
 {
   "name": "rpi.macro",
   "description": "Helper macro for react-precious-image",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/rpi.macro.js",
   "license": "MIT",
   "files": ["dist/"],
