@@ -59,8 +59,8 @@ function requireRpi({ referencePath, state, babel }) {
           t.objectProperty(t.Identifier("lqip"), t.stringLiteral(lqip)),
         ]),
       ),
-      t.objectProperty(t.Identifier("width"), t.NumericLiteral(meta.height)),
-      t.objectProperty(t.Identifier("height"), t.NumericLiteral(meta.width)),
+      t.objectProperty(t.Identifier("width"), t.NumericLiteral(meta.width)),
+      t.objectProperty(t.Identifier("height"), t.NumericLiteral(meta.height)),
       t.objectProperty(t.Identifier("size"), t.NumericLiteral(meta.size)),
     ]),
   );
