@@ -29,7 +29,7 @@
     "lqip": "^2.0.2"
   },
   "devDependencies": {
-    "babel-core": "6.26.0",
+    "babel-core": "6.26.3",
     "babel-plugin-tester": "5.0.0",
     "babel-preset-env": "1.6.1",
     "jest": "22.3.0",
