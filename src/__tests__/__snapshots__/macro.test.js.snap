@@ -2,21 +2,28 @@
 
 exports[`macros correct usage: correct usage 1`] = `
 "
-import lqip from '../macro';
+import rpi from '../macro';
 
-const preview = lqip('./fixtures/jonathan-daniels-416786-unsplash.jpg');
+const preview = rpi('./fixtures/jonathan-daniels-416786-unsplash.jpg');
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const preview =
-  \\"data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwYH/8QAKBAAAQMDAgMJAAAAAAAAAAAAAQIDBAAFBhESBzGxITQ2QUJRcnOB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8AgeGcWw3B59jKDJXu0bjMtqKE7iFHcpQ1I00AHYefKhzrDLljhbkJadds0pZMR8kDePZQ9KgPL9FPN71H+Q6itavvg23/AGjoul8ohSnOH//Z\\";
+const preview = {
+  placeholder: {
+    lqip:
+      \\"data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJAA4DASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwYH/8QAJxAAAQMCBQIHAAAAAAAAAAAAAQIDBAAFBhESITEHsTQ2QUJyc4H/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABgRAAMBAQAAAAAAAAAAAAAAAAABAhEh/9oADAMBAAIRAxEAPwCB6ZxbDcHn2MUGSvVk3GZbUW06iFHUpQzIyyAGx54ocdYMuWHC3IS067ZpSyYj5IGsb7KHtUB6fop5vio/yHcVrV98m2/7R2XS+UQpTnD/2Q==\\",
+  },
+  width: 3024,
+  height: 4774,
+  size: 436854,
+};
 
 "
 `;
 
 exports[`macros no usage: no usage 1`] = `
 "
-import lqip from '../macro'
+import rpi from '../macro'
 
       ↓ ↓ ↓ ↓ ↓ ↓
 

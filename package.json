@@ -1,29 +1,27 @@
 {
-  "name": "lqip.macro",
-  "description": "Cretes LQIP at build time, similar to webpack lqip-loader",
-  "version": "0.1.5",
-  "main": "dist/lqip.macro.js",
+  "name": "rpi.macro",
+  "description": "Helper macro for react-precious-image",
+  "version": "0.1.0",
+  "main": "dist/rpi.macro.js",
   "license": "MIT",
   "files": ["dist/"],
   "keywords": [
-    "webpack",
-    "lqip-loader",
     "lqip",
-    "string",
     "babel",
     "babel-macros",
     "babel-plugin-macros"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stereobooster/lqip.macro.git"
+    "url": "git+https://github.com/stereobooster/rpi.macro.git"
   },
   "scripts": {
     "test": "jest --coverage",
     "format": "prettier --write",
     "ci": "npm run test -- --ci && npm run build",
     "prepare": "npm run build",
-    "build": "microbundle -i src/index.js -o dist && cp src/lqip.js dist/lqip.js",
+    "build":
+      "microbundle -i src/index.js -o dist && cp src/lqip.js dist/lqip.js  && cp src/meta.js dist/meta.js",
     "precommit": "lint-staged"
   },
   "dependencies": {
